@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Random Quote Generataor</title>
 </head>
@@ -12,11 +15,84 @@
 
 
     <section id="landing">
+        <div class="heading">
+            <h1>OMG number <span>facts</span></h1>
+            <p>get many intresting facts about numbers</p>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/0_sairaj_0/"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/chouhan-sairaj-412b911a0/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/sairaj2119"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <ul>
+                <li id="gnf">
+                    <a href="#generalNumberFacts">general number facts</a>
+                </li>
+                <li id="mnf">
+                    <a href="#mathematicalNumberFacts">mathematical number facts</a>
+                </li>
+                <li id="yf">
+                    <a href="#yearFacts">year facts</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="generalNumberFacts">
+        <div class="strip-left"></div>
+        <div class="container">
+            <h2>general number facts generator</h2>
+            <div class="gnf-buttons">
+                <form>
+                    <input type="number" placeholder="Enter a number" required>
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <button class="rand">get a random fact</button>
+            </div>
+            <div class="display"></div>
+        </div>
+    </section>
 
+    <section id="mathematicalNumberFacts">
+        <div class="strip-right"></div>
+        <div class="container">
+            <h2>mathematical number facts generator</h2>
+            <div class="mnf-buttons">
+                <form>
+                    <input type="number" placeholder="Enter a number">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <button class="rand">get a random fact</button>
+            </div>
+            <div class="display"></div>
+        </div>
+    </section>
+    <section id="yearFacts">
+        <div class="strip-left"></div>
+        <div class="container">
+            <h2>year facts generator</h2>
+            <div class="yf-buttons">
+                <form>
+                    <input type="text" placeholder="Enter a number">
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <button class="rand">get a random fact</button>
+            </div>
+            <div class="display"></div>
+        </div>
     </section>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #222831;
 }
+
+/* **************************landing styles******************** */
 
 #landing {
   width: 100%;
@@ -16,4 +24,441 @@ body {
   background-position: center center;
   background-repeat: none;
   background-size: cover;
+  position: relative;
+}
+
+.heading {
+
+  height: 200px;
+  padding-top: 6em;
+  margin-left: 4em;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.heading h1 {
+  font-size: 6em;
+  color: white;
+}
+
+.heading h1 span {
+  color: #00ADB5;
+}
+
+.heading p {
+  margin-left: 14px;
+  margin-top: 1em;
+  color: white;
+  font-size: 1.4em;
+}
+
+.buttons {
+  width: 100%;
+  height: 400px;
+  margin-top: 150px;
+  position: relative;
+
+}
+
+.buttons ul {
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  text-align: center;
+  position: relative;
+}
+
+.buttons ul li:nth-child(2n+1) {
+  margin-left: 250px;
+}
+
+.buttons ul li:nth-child(1)::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 5px;
+  top: 30px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.buttons ul li:nth-child(3)::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 5px;
+  top: 195px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.buttons ul li:nth-child(2)::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  width: 250px;
+  height: 5px;
+  top: 110px;
+  right: 314px;
+  border-radius: 20px;
+}
+
+
+.buttons ul li {
+  list-style-type: none;
+  width: 500px;
+  padding: 20px;
+  background-color: #00ADB5;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.buttons ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+}
+
+/* general styles */
+.strip-left {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  left: 100px;
+  background-color: #00ADB5;
+}
+
+.strip-right {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  right: 100px;
+  background-color: #00ADB5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  padding: 1em 0;
+  font-size: 50px;
+}
+
+.display {
+  width: 100%;
+  height: 50%;
+  margin-top: 90px;
+  background-color: #393E46;
+  border-radius: 30px;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 1.75em;
+  color: white;
+}
+
+/* **********************generalNumberFacts***************** */
+
+#generalNumberFacts {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.gnf-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gnf-buttons form {
+  position: relative;
+}
+
+.gnf-buttons form input {
+  background-color: #393E46;
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: white
+}
+
+.gnf-buttons form button {
+  color: white;
+  background-color: #00ADB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.gnf-buttons button {
+  background-color: #00ADB5;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+
+/* matth  facts  */
+#mathematicalNumberFacts {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.mnf-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mnf-buttons form {
+  position: relative;
+}
+
+.mnf-buttons form input {
+  background-color: #393E46;
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: white
+}
+
+.mnf-buttons form button {
+  color: white;
+  background-color: #00ADB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.mnf-buttons button {
+  background-color: #00ADB5;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* year facts */
+#yearFacts {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.yf-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yf-buttons form {
+  position: relative;
+}
+
+.yf-buttons form input {
+  background-color: #393E46;
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  position: relative;
+  font-size: 1.2em;
+  text-align: center;
+  color: white
+}
+
+.yf-buttons form button {
+  color: white;
+  background-color: #00ADB5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 0;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.yf-buttons button {
+  background-color: #00ADB5;
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* social media styles */
+.social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.social-media ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.social-media ul li a {
+  color: white;
+  font-size: 2em;
+  transition: all .25s linear;
+}
+
+.social-media ul li a:hover {
+  color: #00ADB5;
+}
+
+
+
+
+@media(max-width: 1366px) {
+  .buttons ul li:nth-child(1)::before {
+    display: none;
+  }
+
+  .buttons ul li:nth-child(3)::before {
+    display: none;
+  }
+
+  .buttons ul li:nth-child(2)::before {
+    display: none;
+  }
+
+  .buttons ul li:nth-child(2n+1) {
+    margin-left: 0px;
+  }
+
+  .buttons {
+    margin-top: 100px;
+  }
+
+  .buttons ul {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons ul li {
+    padding: 12px;
+    width: 300px;
+  }
+
+  .buttons ul li a {
+    font-size: 18px;
+    padding: 12px 40px;
+  }
+
+  .strip-left {
+    display: none;
+  }
+
+  .strip-right {
+    display: none;
+  }
+
+  .heading {
+    height: fit-content;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .heading h1 {
+    font-size: 3em;
+    color: white;
+  }
+
+  .heading p {
+    margin: 0;
+    margin-top: 10px;
+
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .gnf-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .rand {
+    margin-top: 15px;
+  }
+
+  .display {
+    height: 40%;
+    margin: 20px auto;
+    width: 80%;
+    font-size: 1em;
+    padding: 30px 20px;
+  }
+
+  .mnf-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .yf-buttons {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social-media {
+    top: 190px;
+    right: 0px;
+    font-size: 10px;
+    padding-right: 10px;
+  }
 }
